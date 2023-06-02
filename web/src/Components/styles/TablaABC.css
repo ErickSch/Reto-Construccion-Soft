@@ -1,0 +1,44 @@
+.TablaABC{
+    border: 1px solid black;
+    margin:10%;
+    margin-top:10%;
+    border-collapse:collapse;
+    width:100%;
+    table-layout: fixed;
+}
+.TablaABC th {
+    border:1px solid black;
+    padding:1em;
+}
+.TablaABC td {
+    border:1px solid black;
+}
+.TablaABC button {
+    margin-left:2%;
+    margin-right:2%;
+}
+.container {
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+.TablaABC .buttons {
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-content:center;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    border:0.000000000001px solid black;
+    /* cambiar esto porque no me gusta que este tan hard-coded */
+}
+
+.TablaABC .buttonsContainer {
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-content:center;
+    border:none;
+
+    /* cambiar esto porque no me gusta que este tan hard-coded */
+}

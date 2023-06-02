@@ -1,0 +1,119 @@
+/* algo de este codigo se jode la navbar */
+@font-face {
+    font-family: "TradeGothic LT";
+    src: url('/fonts/TradeGothic/Trade Gothic LT.ttf') format('truetype');
+    src: url('') format('truetype');
+}
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('/fonts/TradeGothic/Trade Gothic LT Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sabon MT";
+    src: url('/fonts/SabonMTStd/SabonMTStdRegular/Sabon MT Std Regular.woff') format('woff'),
+    url('/fonts/SabonMTStd/SabonMTStdRegular/Sabon MT Std Regular.otf') format('otf');
+}
+
+.TerniumHeader nav  {
+    /* esto me detiene a cambiar el style de menu */
+    background-color:rgb(154, 151, 148);
+    display:flex;
+    flex-direction:column;
+}
+#bar {
+    /* cambiar esto para cambiar el color del menu no hamburguesa */
+    /* tambien tal vez hacer desaparecer el logo de ternium cuando se abre el menu no se */
+    background-color:rgb(66, 61, 60);
+}
+.TerniumHeader > nav > ul {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    list-style:none;
+    width:75%;
+}
+.TerniumHeader > nav > ul li {
+    align-self:center;
+    font-size:1.6em;
+    font-family: 'TradeGothic LT';
+    font-weight:bold;
+    font-family:'arial';
+    font-weight:bold;
+}
+.TerniumHeader > nav > ul li:hover {
+    cursor:pointer;
+    color:rgb(202, 120, 31);
+}
+.TerniumHeader > nav svg{
+    width:75%;
+    margin:10%;
+    margin-bottom:8%;
+    margin-right:0;
+}
+.TerniumHeader > nav {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.svg_icon {
+  transform: scale(2.2);
+}
+.iconbutton {
+    align-self:center;
+    margin-right:4%;
+    margin-left:2%;
+}
+.Ternium {
+    transform: scale(0.8);
+}
+.UnityComponent { 
+    margin:1.5%;
+} 
+.bi-house-door-fill {
+    /* padding-top:5%; */
+    font-size:1em;
+    padding-right:0.3em;
+    padding-left:0;
+    
+}
+.bi-diagram-2 {
+    font-size:1em;
+    padding-right:0.3em;
+    padding-left:0;
+}
+.menu-item {
+    padding-left:0;
+    margin-left:0;
+    display:inline-flex;
+    /* align-items:center; */
+    /* justify-content:flex-start; */
+}
+.TerniumHeader svg.bi-house-door-fill {
+    padding-left:0;
+    margin-left:0;
+    padding-bottom:0;
+    margin-bottom:0;
+
+    /* probablemente agregar una media quer aqui porque en laptop se ve bien pero en mi compu grande no */
+    padding-bottom:10%;
+}
+.TerniumHeader svg.bi-diagram-2 {
+    padding-left:0;
+    margin-left:0;
+    padding-bottom:0;
+    margin-bottom:0;
+    padding-bottom:10%;
+}
+.menu-item2 {
+    display:inline-flex;
+    align-items:center;
+}
+.logo__icon {
+    margin-left:2em;
+}
+.left {
+    display:flex;
+}
