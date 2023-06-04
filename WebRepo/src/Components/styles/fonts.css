@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "TradeGothic LT";
+    src: url('/fonts/TradeGothic/Trade Gothic LT.ttf') format('truetype');
+    src: url('') format('truetype');
+}
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('/fonts/TradeGothic/Trade Gothic LT Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sabon MT";
+    src: url('/fonts/SabonMTStd/SabonMTStdRegular/Sabon MT Std Regular.woff') format('woff'),
+    url('/fonts/SabonMTStd/SabonMTStdRegular/Sabon MT Std Regular.otf') format('otf');
+}
