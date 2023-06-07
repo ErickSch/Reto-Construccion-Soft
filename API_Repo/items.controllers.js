@@ -27,6 +27,21 @@ export const getOnePeople = async (req, res) => {
   }
 };
 
+export const getIsManager = async (req, res) => {
+  console.log(getIsManager);
+  const id = req.params.id;
+
+  try {
+    const result = await pool.request().query(`SELECT isManager FROM Empleado WHERE Id = ${id};`);
+    const person = result.recordset[0];
+
+    res.status(200).json(person);
+  } catch (error) {
+    console.error('Error fetching empleado:', error);
+    res.status(500).json({ message: 'Error fetching empleado' });
+  }
+}
+
 export const postPeople = async (req, res) => {
   console.log(req.body);
   const data = req.body;

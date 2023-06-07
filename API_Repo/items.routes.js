@@ -12,7 +12,8 @@ import {
     isAuthenticated,
     postLogout,
     getLogin,
-    getSessionUser
+    getSessionUser,
+    getIsManager
 } from "./items.controllers.js";
 
 import passport from "passport";
@@ -27,6 +28,7 @@ router.delete("/deletepeople/:id", deletePeople);
 router.put("/updatepeople/:id", updatePeople);
 router.get("/getprofile/:id", isAuthenticated, getProfile);
 router.get("/logout", postLogout);
+router.get("/ismanager", getIsManager);
 
 // Authentication 
 router.post("/register", postRegister);
